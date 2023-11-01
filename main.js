@@ -6,13 +6,13 @@ function inicilizar() {
     while (ejecutar === true);
         calculadora()
         reejecutar = confirm("¿Quieres reintentar?")
-    if(reejecutar===true){
-        ejecutar=true
-    }
-    else{
-        ejecutar=false
-        alert("Hasta luego!")
-    }
+        if(reejecutar===true){
+            calculadora()
+        }
+        else{
+            ejecutar=false
+            alert("Hasta luego!")
+        }
 }
 
 function calculadora() {
@@ -33,6 +33,7 @@ function calculadora() {
     }
     else {
         alert("Ingresó mal algún dato, por favor reintente")
+        calculadora()
     }
 }
 inicilizar()
