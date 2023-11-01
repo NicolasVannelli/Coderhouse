@@ -2,17 +2,18 @@
 
 
 function inicilizar() {
-    let ejecutar = false
-    while (ejecutar === true);
+    let ejecutar = true
+    while (ejecutar === true){
         calculadora()
         reejecutar = confirm("¿Quieres reintentar?")
         if(reejecutar===true){
-            calculadora()
+            ejecutar==true
         }
         else{
             ejecutar=false
             alert("Hasta luego!")
         }
+    }
 }
 
 function calculadora() {
